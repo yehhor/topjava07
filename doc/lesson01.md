@@ -19,6 +19,20 @@ Map<LocalDate, Integer> caloriesSumByDate = mealList.stream()
 
 > Изменения в проекте: `map.getOrDefault` земенил на `map.merge`, `for` заменены на `forEach`
 
+### ![question](https://cloud.githubusercontent.com/assets/13649199/13672858/9cd58692-e6e7-11e5-905d-c295d2a456f1.png) Ваши вопросы по HW0
+
+> что делает метод `Map.merge`
+
+никогда не надо ленится зайти в код Map и почитать там javadoc. Когда, если не сейчас?
+
+> что означает `Integer::sum`
+
+это ссылка на метод, сокращенная форма лямбды. IDEA иногда предлагает замену, например
+`um->um.getCalories()` заменяет на `UserMeal::getCalories`.
+
+> почему не использовать в `TimeUtil` методы `isBefore/isAfter`
+
+это строгие (excluded) сравнения, а нам также нужны краевые значения
 ## Занятие 1:
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 3. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFRmo0YkVVaDJPTVE">Обзор используемых в проекте технологий. Интеграция ПО.</a>
 -  <a href="http://zeroturnaround.com/rebellabs/java-tools-and-technologies-landscape-for-2014/">Обзор популярности инструментов и технологий Java за 2014 г.</a>
