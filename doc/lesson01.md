@@ -2,7 +2,7 @@
 - **<a href="https://github.com/JavaOPs/topjava/wiki/Git">Напоминаю про работу с патчами (GIT Wiki)</a>**
 - **Не стоит стремится прочитать все ссылки урока, они могут быть как справочник. Гораздо важнее сделать Домашнее Задание**
 
-## <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFfm5hSHEtbmxmN2kxb0NocVRwWl9KanowWXVCVXRZTlhaM09wQUswZkRidTA">Материалы 1-го урока</a>
+# 1-е занятие
 
 ## ![hw](https://cloud.githubusercontent.com/assets/13649199/13672719/09593080-e6e7-11e5-81d1-5cb629c438ca.png) Разбор домашнего задания HW0:
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 1. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFOGU0a3ZUbFo3Skk">Optional: реализация getFilteredMealsWithExceeded через Stream API</a>
