@@ -6,6 +6,14 @@
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 1. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFOGU0a3ZUbFo3Skk">Optional: реализация getFilteredMealsWithExceeded через Stream API</a>
 - **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFS1FZak55T0Y4cEU">1-1-HW0-stream.patch</a>**
 
+> Еще вариант группировки калорий за день:
+```
+Map<LocalDate, Integer> caloriesSumByDate = mealList.stream()
+  .collect(
+    Collectors.toMap(um -> um.getDateTime().toLocalDate(), UserMeal::getCalories, Integer::sum)
+  );
+```
+
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 2. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFdTJIQUExajZWWkE">Работа с git в IDEA. Реализация через цикл.</a>
 - **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFSWxmSExhR0xydU0">1-2-HW0-cycle.patch</a>**
 
