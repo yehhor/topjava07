@@ -1,6 +1,6 @@
 # Онлайн проекта <a href="https://github.com/JavaWebinar/topjava07">Topjava</a>
-
 - **<a href="https://github.com/JavaOPs/topjava/wiki/Git">Напоминаю про работу с патчами (GIT Wiki)</a>**
+- **Не стоит стремится прочитать все ссылки урока, они могут быть как справочник. Гораздо важнее сделать Домашнее Задание**
 
 ## <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFfm5hSHEtbmxmN2kxb0NocVRwWl9KanowWXVCVXRZTlhaM09wQUswZkRidTA">Материалы 1-го урока</a>
 
