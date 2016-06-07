@@ -63,6 +63,9 @@ Map<LocalDate, Integer> caloriesSumByDate = mealList.stream()
 
 - **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFVWVGZ1FIUkFHYXM">1-4-add-servlet-api.patch</a>**
 - **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFMXlZN0tGSjJRZW8">1-5-forward-to-redirect.patch</a>**
+
+> <a href="http://winreview.ru/kak-uznat-kakaya-programma-ispolzuet-tot-ili-inoj-port-v-windows-7/">Проверка, кто занял порт в Windows</a>
+
 - Перевод проекта на Web.
 - <a href="http://tomcat.apache.org/">Tomcat Home Page</a>
 - <a href="http://java-course.ru/student/book1/servlet/">Сервлеты.</a>
