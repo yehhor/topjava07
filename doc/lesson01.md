@@ -155,6 +155,7 @@ JSF- sun-овский еще фреймворк, с которым я ни ра�
   - <a href="http://java-course.ru/student/book1/jsp/">JSP</a>
   - <a href="http://devcolibri.com/1250">JSTL для написания JSP страниц</a>
   - <a href="http://javatutor.net/articles/jstl-patterns-for-developing-web-application-1">JSTL: Шаблоны для разработки веб-приложений в java</a>
+  - <a href="http://stackoverflow.com/questions/35606551/jstl-localdatetime-format">JSTL LocalDateTime format</a>
 
 #### Optional
 
