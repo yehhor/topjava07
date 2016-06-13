@@ -148,7 +148,7 @@
 
 - В `MealServlet` сделать инициализацию Spring, достать `UserMealRestController` из контекста и работать с едой через него (см. `SpringMain`. pom.xml НЕ менять, работаем со spring-context).
 - Добавить в `mealList.jsp` и `MealServlet` две отдельные фильтрации еды: по дате и по времени (см. демо)
-- Добавить выбор текущего залогиненного пользователя (имитация авторизации, например захардкодить 1,2 в `index.html` select и сделать `LoggedUser.setId(userId)` в `UserServlet`).
+- Добавить выбор текущего залогиненного пользователя (имитация авторизации, сделать Select с двумя элементами со значениями 1 и 2 в `index.html` и `LoggedUser.setId(userId)` в `UserServlet`).
 
 ---------------------
 ### ![error](https://cloud.githubusercontent.com/assets/13649199/13672935/ef09ec1e-e6e7-11e5-9f79-d1641c05cbe6.png) Подсказки по HW02 (для проверки, сначала сделайте самостоятельно!)
