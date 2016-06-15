@@ -10,9 +10,9 @@
 > Изменения в проекте:
   - В репозиториях по другому инстанциировал компараторы
   - Пернес обработку пустых дат  в `UserMealRestController.getBetween()`
-  - Зарефакторил `<T extends Comparable<? super T>> TimeUtil.isBetween(T value, T start, T end)`. Дженерики означают, что мы принимаем экземпляры класса, который имплементит компаратор,
-   который умеет сравнивать T или суперклассы от T
-- **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFS195Wm9aNi1uWjQ">1-HW2-repository.patch</a>**
+  - Зарефакторил `<T extends Comparable<? super T>> TimeUtil.isBetween(T value, T start, T end)`. Дженерики означают, что мы принимаем экземпляры класса, который имплементит компаратор, который умеет сравнивать T или суперклассы от T
+  
+  - **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFS195Wm9aNi1uWjQ">1-HW2-repository.patch</a>**
 
 **Внимание: при удалении класса он остается скомпилированный у вас в target (и classpath). В этом случае (или вообще если непонятно почему проект глючит) сделаейт в maven clean.**
 
