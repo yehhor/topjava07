@@ -29,7 +29,7 @@
 
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 3. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFU0Z2R190eDllYmM">Spring: инициализация и популирование DB</a>
 - **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFSXZCcDdEemdXU00">4-init-and-populate-db.patch</a>**
-> - `@Sql` в тестах заменяет `@Before public void setUp()`, те выполняется перед каждым тестом
+> `@Sql` в тестах заменяет `@Before public void setUp()`, те выполняется перед каждым тестом
 
 -  <a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/jdbc.html#jdbc-initializing-datasource-xml">Инициализация базы при старте приложения</a>
 -  <a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/#integration-testing-annotations-spring">Spring Testing Annotations</a>
@@ -44,6 +44,7 @@
 > Тесты и приложение ломаются. `UserMealServiceTest` починится после выполнения HW04 (`JpaUserMealRepositoryImpl`)
 
 -  **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFa0F4SWszQmYxMzQ">6-add-jpa.patch</a>**
+
 >  Upgrade Hibernate to 5.0.4 needed to add `javax.transaction.jta`, see <a href="https://hibernate.atlassian.net/browse/HHH-10307">5.0.4 requires javax.transaction.SystemException</a>
 
 >  Upgrade Hibernate Validator needed to add `javax.el-api`, see <a href="http://stackoverflow.com/questions/24386771/javax-validation-validationexception-hv000183-unable-to-load-javax-el-express">javax.validation.ValidationException</a>
@@ -67,9 +68,11 @@
 -  <a href="http://docs.jboss.org/hibernate/orm/4.2/devguide/en-US/html/ch11.html">HQL</a>/ <a href="http://ru.wikipedia.org/wiki/Java_Persistence_Query_Language">JPQL</a>.
 -  <a href="http://www.objectdb.com/java/jpa/query/criteria">JPA Criteria API</a>. <a href="http://www.querydsl.com/">Unified Queries for Java</a>
 -  <a href="https://weblogs.java.net/blog/montanajava/archive/2014/06/17/using-java-8-datetime-classes-jpa">Java 8 Time API Converter</a>
+
 >
 - **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFQmlRRnQ3ZXhEU28">7-add-named-query-and-transaction.patch</a>**
 >
+
 -  <a href="http://ru.wikipedia.org/wiki/Транзакция_(информатика)">Транзакция. ACID. Уровни изоляции транзакций.</a>
 -  Подключаем транзакции. <a href="http://www.tutorialspoint.com/spring/spring_transaction_management.htm">Spring Transaction Management</a>
 -  <a href="https://jira.spring.io/browse/DATAJPA-601">readOnly и Propagation.SUPPORTS</a>
