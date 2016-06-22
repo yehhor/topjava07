@@ -69,9 +69,7 @@
 -  <a href="http://www.objectdb.com/java/jpa/query/criteria">JPA Criteria API</a>. <a href="http://www.querydsl.com/">Unified Queries for Java</a>
 -  <a href="https://weblogs.java.net/blog/montanajava/archive/2014/06/17/using-java-8-datetime-classes-jpa">Java 8 Time API Converter</a>
 
->
 - **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFQmlRRnQ3ZXhEU28">7-add-named-query-and-transaction.patch</a>**
->
 
 -  <a href="http://ru.wikipedia.org/wiki/Транзакция_(информатика)">Транзакция. ACID. Уровни изоляции транзакций.</a>
 -  Подключаем транзакции. <a href="http://www.tutorialspoint.com/spring/spring_transaction_management.htm">Spring Transaction Management</a>
@@ -117,16 +115,16 @@ JPA- это JavaEE спецификация, API. Ее реализации- Hib
 
 ## ![hw](https://cloud.githubusercontent.com/assets/13649199/13672719/09593080-e6e7-11e5-81d1-5cb629c438ca.png) Домашнее задание HW04
 
-- Сделать UserMeal как Hibernate entity
-- Добавить для JPA поддержку LocalDateTime
-- Имплементировать и протестировать JpaUserMealRepositoryImpl
+- Сделать `UserMeal` как Hibernate entity
+- Добавить для JPA поддержку `LocalDateTime`
+- Имплементировать и протестировать `JpaUserMealRepositoryImpl`
   -  IDEA не понимает в @NamedQuery `..  m.dateTime BETWEEN ..`. На функциональность это не влияет.
   -  <a href="http://stackoverflow.com/questions/23718383/jpa-support-for-java-8-new-date-and-time-api">JPA support for Java 8 new date and time API</a>
   -  <a href="http://stackoverflow.com/questions/31965179/whats-new-in-hibernate-5">What's new in Hibernate 5?</a>
 
 #### Optional
 
-- Добавить в тесты UserMealServiceTest функциональность @Rule:
+- Добавить в тесты `UserMealServiceTest` функциональность `@Rule`:
   - проверку Exception
   - вывод в лог времени выполнения каждого теста
 -  <a href="https://github.com/junit-team/junit/wiki/Rules">JUnit @Rules</a>
