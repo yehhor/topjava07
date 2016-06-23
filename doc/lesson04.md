@@ -113,7 +113,7 @@ JPA- это JavaEE спецификация, API. Ее реализации- Hib
 
 --------------------
 
-## ![hw](https://cloud.githubusercontent.com/assets/13649199/13672719/09593080-e6e7-11e5-81d1-5cb629c438ca.png) Домашнее задание HW04
+## ![hw](https://cloud.githubusercontent.com/assets/13649199/13672719/09593080-e6e7-11e5-81d1-5cb629c438ca.png) Домашнее задание HW4
 
 - Сделать `UserMeal` как Hibernate entity
 - Добавить для JPA поддержку `LocalDateTime`
@@ -130,7 +130,7 @@ JPA- это JavaEE спецификация, API. Ее реализации- Hib
 -  <a href="https://github.com/junit-team/junit/wiki/Rules">JUnit @Rules</a>
 
 ---------------------
-### ![error](https://cloud.githubusercontent.com/assets/13649199/13672935/ef09ec1e-e6e7-11e5-9f79-d1641c05cbe6.png) Подсказки по HW04
+### ![error](https://cloud.githubusercontent.com/assets/13649199/13672935/ef09ec1e-e6e7-11e5-9f79-d1641c05cbe6.png) Подсказки по HW4
 
 -  Тк. JPQL работает с объектами мы не можем использовать userId для сохранения. Можно сделать например так:
 
