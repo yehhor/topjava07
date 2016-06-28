@@ -13,7 +13,8 @@
 
 > В JUnit тестах используется кодировка по умолчанию и тесты, если их запускать через maven, не проходят. Решается кастомизацией плагина <a href="https://maven.apache.org/surefire/maven-surefire-plugin/">maven-surefire-plugin</a>
 
-> В meals добавил составной индекс `INDEX meals_unique_user_datetime_idx ON meals(user_id, date_time)` для повышения скорости запросов по этим полям: **[сревнение времени выполнения для разных индексов](meals_index.md)**.
+> В meals добавил составной индекс `INDEX meals_unique_user_datetime_idx ON meals(user_id, date_time)` для повышения скорости запросов по этим полям:
+ - **[сревнение времени выполнения для разных индексов](meals_index.md)**.
  - все запросы в таблицу meals у нас идут с `user_id`
  - по полю `date_time` также есть запросы + мы по нему сортируем список результатов
  те они- хорошие кандидаты для индексирования. <a href="http://stackoverflow.com/questions/970562/postgres-and-indexes-on-foreign-keys-and-primary-keys">На id как на primary key индекс создается автоматически</a>.
