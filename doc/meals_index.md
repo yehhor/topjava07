@@ -108,7 +108,7 @@ Sort  (cost=96.02..98.66 rows=1057 width=31) (actual time=0.020..0.020 rows=0 lo
 Planning time: 0.095 ms
 Execution time: 0.047 ms
 ```
-### Составной индекс по user_id и date_time
+### Составной индекс по user_id и date_time (ЗАВИСИТ ОТ ПОРЯДКА ЗАДАНИЯ КОЛОНОК!)
 **время выполнения 0.110ms/0.035ms**
 
 > DROP INDEX meals_idx;
