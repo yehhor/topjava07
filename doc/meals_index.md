@@ -40,7 +40,6 @@ $$ LANGUAGE plpgsql;
 
 select populate_db();
 ```
-
 ### Без индекса
 **время выполнения 200ms/150ms**
 
@@ -50,6 +49,7 @@ select populate_db();
          SELECT * FROM meals
           WHERE user_id = 100000 AND date_time BETWEEN '2015-02-10' AND '2015-05-20'
           ORDER BY date_time DESC;
+          
 ```
 Sort  (cost=28292.17..28292.88 rows=286 width=31) (actual time=203.774..203.782 rows=298 loops=1)
   Sort Key: date_time DESC
@@ -60,10 +60,12 @@ Sort  (cost=28292.17..28292.88 rows=286 width=31) (actual time=203.774..203.782 
 Planning time: 0.102 ms
 Execution time: 203.822 ms
 ```
+
 > EXPLAIN ANALYZE
          SELECT * FROM meals
           WHERE user_id = 100003
           ORDER BY date_time DESC;
+
 ```
 Sort  (cost=22858.59..22861.23 rows=1057 width=31) (actual time=147.481..147.481 rows=0 loops=1)
   Sort Key: date_time DESC
@@ -84,6 +86,7 @@ Execution time: 147.514 ms
          SELECT * FROM meals
           WHERE user_id = 100000 AND date_time BETWEEN '2015-02-10' AND '2015-05-20'
           ORDER BY date_time DESC;
+
 ```
 Sort  (cost=59.88..60.59 rows=286 width=31) (actual time=0.372..0.378 rows=298 loops=1)
   Sort Key: date_time DESC
@@ -95,10 +98,12 @@ Sort  (cost=59.88..60.59 rows=286 width=31) (actual time=0.372..0.378 rows=298 l
 Planning time: 0.123 ms
 Execution time: 0.414 ms
 ```
+
 > EXPLAIN ANALYZE
          SELECT * FROM meals
           WHERE user_id = 100003
           ORDER BY date_time DESC;
+
 ```
 Sort  (cost=96.02..98.66 rows=1057 width=31) (actual time=0.020..0.020 rows=0 loops=1)
   Sort Key: date_time DESC
@@ -108,6 +113,7 @@ Sort  (cost=96.02..98.66 rows=1057 width=31) (actual time=0.020..0.020 rows=0 lo
 Planning time: 0.095 ms
 Execution time: 0.047 ms
 ```
+
 ### Составной индекс по user_id и date_time (ЗАВИСИТ ОТ ПОРЯДКА ЗАДАНИЯ КОЛОНОК!)
 **время выполнения 0.110ms/0.035ms**
 
@@ -119,16 +125,19 @@ Execution time: 0.047 ms
          SELECT * FROM meals
           WHERE user_id = 100000 AND date_time BETWEEN '2015-02-10' AND '2015-05-20'
           ORDER BY date_time DESC;
+
 ```
 Index Scan Backward using meals_user_id_date_time_idx on meals  (cost=0.43..511.74 rows=286 width=31) (actual time=0.026..0.081 rows=298 loops=1)
   Index Cond: ((user_id = 100000) AND (date_time >= '2015-02-10 00:00:00'::timestamp without time zone) AND (date_time <= '2015-05-20 00:00:00'::timestamp without time zone))
 Planning time: 0.130 ms
 Execution time: 0.112 ms
 ```
+
 > EXPLAIN ANALYZE
          SELECT * FROM meals
           WHERE user_id = 100003
           ORDER BY date_time DESC;
+
 ```
 Index Scan Backward using meals_user_id_date_time_idx on meals  (cost=0.43..1795.68 rows=1057 width=31) (actual time=0.012..0.012 rows=0 loops=1)
   Index Cond: (user_id = 100003)
