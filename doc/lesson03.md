@@ -164,6 +164,6 @@ UNIQUE индекс нужен для обеcпечения уникальнос
 - Сделать `UserMealServiceTest` из `UserMealService` (Ctrl+Shift+T и выбрать JUnit4) и реализовать тесты.
 - Сделать тесты на чужих юзеров (delete, get, update) с тем чтобы получить `NotFoundException` и тесты на `update` чужой еды.
 - Предложить решение, как почнинить `SpringMain/ InMemory*Test`. `InMemory*Test` предполагает использовать нашу реализацию репозитория в памяти
-- Сделать индекс к таблице `Meals`.
+- Сделать индексы к таблице `Meals`.
 - <a href="http://stackoverflow.com/questions/970562/postgres-and-indexes-on-foreign-keys-and-primary-keys">Postgres and Indexes on Foreign Keys and Primary Keys</a>
 - <a href="http://postgresguide.com/performance/indexes.html">Postgres Guide: Indexes</a>
