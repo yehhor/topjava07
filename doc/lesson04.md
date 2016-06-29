@@ -103,6 +103,13 @@
 >  Есть несколько аналогичных "встроенных" баз данных. H2, HSQLDB, Derby, SQLite. Почему был выбран HSQLDB?
 
 Просто с ней приходилось работать. HSQLDB и H2 наиболее популярны, в новом курсе по spring-boot планирую использовать H2.
+Здесь интересное краткое описание <a href="http://easyjava.ru/data/vstraivaemye-bazy-dannyx-v-java/">встраиваемых баз данных в Java</a>
+
+> БД HSQLDB удобно использовать для тестирования и для offline приложений. А для online приложений, с одновременным доступ к базе нельзя?
+
+В HSQLDB нет репликаций, кластеризайии и объем данным ограничен несколькими TB. Для большого количества приложений она подходит и для продакшена. См.
+- <a href="http://stackoverflow.com/questions/4152911/what-is-hsqldb-limitations">What is HSQLDB limitations?</a>
+- <a href="https://habrahabr.ru/sandbox/23199/">HSQLDB в режиме in-process</a>
 
 > Чистого JPA не существует, т.е. это всего лишь интерфейс, спецификация? Говорим JPA, подразумеваем какой-то ORM фрэймворк? А что тогда используют чистый jdbc, Spring-jdbc, MyBatis? MyBatis не реализует JPA?
 
@@ -111,6 +118,10 @@ JPA- это JavaEE спецификация, API. Ее реализации- Hib
 > В зависимостях maven `hibernate-entitymanager` тянет за собой `jboss-logging`. Как будет происходить логгирование?
 
 <a href="http://stackoverflow.com/questions/11639997/how-do-you-configure-logging-in-hibernate-4-to-use-slf4j">How do you configure logging in Hibernate 4 to use SLF4J</a>: в нашем проекте автоматически подхватывается `logback-classic`.
+
+> В чем преимущество Hibernate ?
+
+Hibernate (как любая ORM) реализует маппинг таблиц в объекты Java. Когда мы добавим роли к пользователю вы увидете, насколько код будет проще, чем в jdbc.
 
 --------------------
 
@@ -158,6 +169,3 @@ JPA- это JavaEE спецификация, API. Ее реализации- Hib
 "Как лучше сделать и почему не работает" подсказок с моей стороны также не будет, но вопросы по технологиям конечно спрашивать можно и нужно.
 
 ### Успехов в выполнении!
-
-
-
