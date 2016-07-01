@@ -144,6 +144,7 @@ Hibernate (как любая ORM) реализует маппинг таблиц
   - проверку Exception
   - вывод в лог времени выполнения каждого теста
 -  <a href="https://github.com/junit-team/junit/wiki/Rules">JUnit @Rules</a>
+-  <a href="http://blog.qatools.ru/junit/junit-rules-tutorial#expectedexcptn">замена ExpectedException</a>
 
 ---------------------
 ### ![error](https://cloud.githubusercontent.com/assets/13649199/13672935/ef09ec1e-e6e7-11e5-9f79-d1641c05cbe6.png) Подсказки по HW4
