@@ -66,7 +66,7 @@
 -  **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFejFxa2xmSE1HTUk">5-spring-cache</a>**
 -  <a href="http://habrahabr.ru/post/113945/">Кеширование в Spring Framework</a>
 -  <a href="http://www.ehcache.org/">EHCACHE</a>
--  В случае проблем с резмещением кэш в `java.io.tmpdir`: http://stackoverflow.com/questions/1924136/environment-variable-to-control-java-io-tmpdir
+-  В случае проблем с размещением кэш в `java.io.tmpdir`: http://stackoverflow.com/questions/1924136/environment-variable-to-control-java-io-tmpdir
 -  Ресурсы:
    -  <a href="http://docs.spring.io/spring-framework/docs/current/spring-framework-reference/html/cache.html">Spring cache Abstraction</a>
    -  <a href="http://habrahabr.ru/post/25140/">Распределённая система кеша ehcache</a>
@@ -80,7 +80,7 @@
 Дополнительное проксирование в DATA-JPA - моя "фишка" для устранения минусов этого фреймворка: невозможность дебага, привязка к интерфейсу JpaRepository, перенос логики Repository в слой сервисов.
 Для большого приложения выигрыш этого стоит. Но вообще можно не делать дополнительный класс и перенести его логику в слой сервиса.
 
-> Почему мы для InMemory не сдалели отдельного профиля? Почему их не удалить вообще?
+> Почему мы для InMemory не сделали отдельного профиля? Почему их не удалить вообще?
 
 Реализация InMemory является примером как в test делать моки с подменой контекста. Для них сделали отдельный `mock.xml` и запускаемый проект ничего не должен о них знать. У нас учебный проект, в котором 4 реализации репозиториев, в реальном такого не будет.
 
