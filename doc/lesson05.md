@@ -95,11 +95,11 @@
 
 #### Optional
 
+- Разделить JDBC реализацию для HSQLDB и Postgres (через `@Profile`, HSQLDB не умеет работать с Java8 Time API)
 - Починить `MealServlet` / `SpringMain` - добавить профили. Попробуйте поднять Spring контекст без использования `spring.profiles.activ`.
 - Сделать и протестировать в сервисах методы (можно сделать разные варианты, реализация только в DataJpa). Обращения к DB сделать в одной транзакции:
   -  достать по id пользователя вместе с его едой
   -  достать по id еду вместе с пользователем
-- Разделить JDBC реализацию для HSQLDB и Postgres (через `@Profile`, HSQLDB не умеет работать с Java8 Time API)
 
 ---------------------
 ### ![error](https://cloud.githubusercontent.com/assets/13649199/13672935/ef09ec1e-e6e7-11e5-9f79-d1641c05cbe6.png) Подсказки по HW05
