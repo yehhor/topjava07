@@ -41,6 +41,7 @@
  > Для переключения на HSQLDB необходимо:
  >  - поменять в окне Maven Projects профиль (Profiles) на `hsqldb` и сделать `Reimport All Maven Projects` (1я кнопка)
  >  - поменять `Profiles.ACTIVE_DB = HSQLDB`
+ >  - почистить проект `mvn clean` (фаза `clean` не выполняется автоматически, чтобы каждый раз не перекомпилировать весь проект)
 
 - <a href="https://dzone.com/articles/using-spring-profiles-xml">Using Spring Profiles in XML Config</a>
 > Галочка в XML профиле влияет только на интеграцию в IDEA и никак на выполнение кода.
