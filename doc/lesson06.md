@@ -144,7 +144,7 @@ _user_ - это имя региона ecache, которое мы выбрали
 _ru.javawebinar.topjava.model.User_ - имя региона, которое использует Hibernate для кэширования содержимого таблицы _USERS_.
 Мы можем оставить настройки по умолчанию, либо задать свои.
 
-> A `@NamedQuery` или `@Query` подвержены кешу запросов? Т.е. если мы поставим _USE_QUERY_CACHE_value="true" будет Hibernate их кешировать?
+> A `@NamedQuery` или `@Query` подвержены кешу запросов? Т.е. если мы поставим _USE_QUERY_CACHE_value_="true" будет Hibernate их кешировать?
 
 Чтобы запрос кэшировался, кроме true в конфигурации нужно еще явно выставить запросу _setCacheable_ (http://vladmihalcea.com/2015/06/08/how-does-hibernate-query-cache-work/). По поводу кэширования `@NamedQuery` нашел `@QueryHint`: https://docs.jboss.org/jbossas/docs/Clustering_Guide/5/html/ch04s02s03.html
 
