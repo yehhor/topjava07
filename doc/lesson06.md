@@ -121,7 +121,7 @@ Hibernate supports following open-source cache implementations out-of-the-box: E
 
 > Отлично, что она все пишет на том языке, который пришел в хидере запроса. А если я хочу выбрать?
 
-Для этого используется <a href="http://www.codejava.net/java-ee/jstl/jstl-format-tag-setlocale">JSTL Format Tag fmt:setLocale</a>. Мы будем реализовывать переключение локалей будет только в Spring i18n.
+Для этого используется <a href="http://www.codejava.net/java-ee/jstl/jstl-format-tag-setlocale">JSTL Format Tag fmt:setLocale</a>. Мы будем реализовывать переключение локалей только в Spring i18n.
 
 > Мы создаем бин, где получаем dataSource по имени `<jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/jdbc/topjava"/>`.
 Но там не указан класс, как в других dataSource? Получается по имени jdbc/topjava нам уже отдает готовый обьект dataSource и мы как бы помещаем его в бин?
