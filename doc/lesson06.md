@@ -11,6 +11,7 @@
 -  **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFNGY0ZDg2UjN3OGM">2-HW5-profiles.patch</a>**
 
 > Для IDEA не забудте выставить Spring Profiles в `spring-db.xml`: нарпимер `datajpa, postgres`
+
 -  **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFSlF2TDUyaXlDbU0">3-HW5-tests.patch</a>**
 
 > `DbTest` переименован в `AbstractServiceTest` и сюда перенесли `@ActiveProfiles(Profiles.POSTGRES)`
@@ -19,6 +20,7 @@
 -  **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFLUIwZXE0cVVTcEE">4-HW5-optional-split-jdbc</a>**
 
 >  HSQLDB driver не понимает LocalDateTime, разделил `JdbcUserMealRepositoryImpl` на `Java8JdbcUserMealRepositoryImpl` и `TimestampJdbcUserMealRepositoryImpl`
+
 - <a href="https://www.javacodegeeks.com/2013/10/spring-4-conditional.html">Spring 4 Conditional</a>. Зайдите в исходники `@Profile` и посмотрите его  реализацию через `@Conditional`.
 -  **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFVkREMl85N0E3amc">5-HW5-optional-fix-servlet-main.patch</a>**
 -  <a href="http://javarticles.com/2013/12/spring-profiles.html">Spring Profiles</a>
@@ -99,6 +101,7 @@
 > Убедитесь что <a href="https://github.com/JavaOPs/topjava/wiki/IDEA#%D0%9F%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C-%D0%BA%D0%BE%D0%B4%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D1%83-utf-8">в настройках IDEA кодировка везде UTF-8</a>
 
 > Проверьте, что файлы локализации у вас в UTF-8 (в IDEA справа внизу в статусе есть кодировка и можно перекодировать).
+
 -  <a href="http://simplespringtutorial.com/i18n.html">Spring Internationalization or i18n</a>
 -  <a href="http://learningviacode.blogspot.ru/2012/07/reloadable-messagesources.html">Reloadable MessageSources</a>
 -  <a href="http://nginx.com/resources/admin-guide/serving-static-content/">nginx: Serving Static Content</a>
