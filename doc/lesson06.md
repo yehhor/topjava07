@@ -172,7 +172,7 @@ _ru.javawebinar.topjava.model.User_ - имя региона, которое ис
   - можно по аналогии с `RootController#setUser` принимать `HttpServletRequest request`, аннотации на параметры и адаптеры для LocalDate\Time мы введем позже.
 
 #### Optional
-- Добавить еще одну роль к ADMIN (будет 2 роли: `ROLE_USER, ROLE_ADMIN`), добавить проверку ролей в тесты на User, починить тесты Jpa (дублирование)
+- Добавить еще одну роль к ADMIN (будет 2 роли: `ROLE_USER, ROLE_ADMIN`), добавить проверку ролей в тесты на User, починить тесты Jpa и DataJpa
 - Починить тесты на роли Jdbc: добавить транзакционность (`DataSourceTransactionManager`) и доставание ролей в `JdbcUserRepositoryImpl`
 
 ---------------------
