@@ -174,6 +174,8 @@ _ru.javawebinar.topjava.model.User_ - имя региона, которое ис
 
 #### Optional
 - Добавить еще одну роль к ADMIN (будет 2 роли: `ROLE_USER, ROLE_ADMIN`), добавить проверку ролей в тесты на User, починить тесты Jpa и DataJpa
+  - <a href="http://stackoverflow.com/questions/29602386/how-does-the-fetchmode-work-in-spring-data-jpa">How does the FetchMode work in Spring Data JPA</a>
+  - <a href="http://www.thoughts-on-java.org/5-ways-to-initialize-lazy-relations-and-when-to-use-them/">5 ways to initialize lazy relationsships</a>
 - Починить тесты на роли Jdbc: добавить транзакционность (`DataSourceTransactionManager`) и доставание ролей в `JdbcUserRepositoryImpl`
 
 ---------------------
