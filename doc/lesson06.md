@@ -3,6 +3,7 @@
 ### ![error](https://cloud.githubusercontent.com/assets/13649199/13672935/ef09ec1e-e6e7-11e5-9f79-d1641c05cbe6.png) Правки в проекте
 - **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFQ1RXdXZQVlpnc00">0-fix.patch</a>**
 - Сравните запросы в базу в `UserServiceTest.testGetAll` до и после патча. **Мораль: не используйте  `FetchType.EAGER`**
+- <a href="http://stackoverflow.com/questions/97197/what-is-the-n1-selects-issue">N+1 selects issue</a>
 
 ## ![hw](https://cloud.githubusercontent.com/assets/13649199/13672719/09593080-e6e7-11e5-81d1-5cb629c438ca.png) Разбор домашнего задания HW5
 
