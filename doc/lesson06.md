@@ -113,7 +113,7 @@
 - <a href="http://mrbool.com/understanding-hibernate-caching/28721">Understanding Hibernate Caching</a>:
 Hibernate supports following open-source cache implementations out-of-the-box: EHCache (Easy Hibernate Cache), OSCache (Open Symphony Cache), Swarm Cache, and JBoss Tree Cache.
 
-> Где конфигурится интернализация для jstl? Т.е. файл, где здаются app, app_ru.properties. Достаточно указать в страницах бандл и путь в ресурсы?
+> Где конфигурится интернализация для jstl? Т.е. файл, где задаются app, app_ru.properties. Достаточно указать в страницах бандл и путь в ресурсы?
 
 `<fmt:setBundle basename="messages.app"/>` означает что ресурсы будут искаться в `classpath:messages\app(_xx)/properties`:
 <a href="http://docs.oracle.com/javaee/5/jstl/1.1/docs/tlddocs/fmt/setBundle.html">Tag setBundle</a>: fully-qualified resource name, which has the same form as a fully-qualified class name.
@@ -137,7 +137,7 @@ Hibernate supports following open-source cache implementations out-of-the-box: E
 > Почему мы не используем элемент `<context:annotation-config/>` в `spring-db.xml`?
 
 В проекте у нас сейчас 2 Spring контекста: `spring-mvc.xml (см. web.xml, DispatcherServlet)` и родительский `spring-app.xml + spring-db.xml (web.xml, contextConfigLocation)`.
-Грубо: 2 мапы, причем для mvc доступно все что есть в родителе. Те `spring-db.xml` не является отдельным самотоятельным контекстом и достаточно того, что `<context:annotation-config/>` у нас есть в `spring-app.xml`.
+Грубо: 2 мапы, причем для mvc доступно все что есть в родителе. Те `spring-db.xml` не является отдельным самостоятельным контекстом и достаточно того, что `<context:annotation-config/>` у нас есть в `spring-app.xml`.
 
 > В _ehcache.xml_ чем _<cache name="users"_ отличается от _<cache name="ru.javawebinar.topjava.model.User"_?
 
