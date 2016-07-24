@@ -7,6 +7,9 @@ import static org.hamcrest.Matchers.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static ru.javawebinar.topjava.MealTestData.MEAL1;
+import static ru.javawebinar.topjava.MealTestData.MEAL2;
+import static ru.javawebinar.topjava.MealTestData.MEAL3;
 import static ru.javawebinar.topjava.UserTestData.USER;
 import static ru.javawebinar.topjava.model.BaseEntity.START_SEQ;
 
@@ -29,6 +32,19 @@ public class RootControllerTest extends AbstractControllerTest {
                                 hasProperty("id", is(START_SEQ)),
                                 hasProperty("name", is(USER.getName()))
                         )
+                )));
+    }
+
+    @Test
+    public void testMealList() throws Exception {
+        mockMvc.perform(get("/meals"))
+                .andDo(print())
+                .andExpect(status().isOk())
+                .andExpect(view().name("mealList"))
+                .andExpect(forwardedUrl("/WEB-INF/jsp/mealList.jsp"))
+                .andExpect(model().attribute("mealList", hasItems(
+                       hasProperty("id", is(MEAL1.getId())),
+                       hasProperty("id", is(MEAL2.getId()))
                 )));
     }
 }
